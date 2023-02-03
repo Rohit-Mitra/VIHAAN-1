@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Footer, Blog, Possibility, Features, WhatGPT3, Header } from './containers';
+import { Footer, Blog, Possibility, Features, WhatGPT3, Header, Judge } from './containers';
 import { CTA, Navbar } from './components';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
@@ -12,11 +12,12 @@ const App = () => (
       <Navbar />
       <Header />
     </div>
-    <WhatGPT3 />
     <Features />
     <Possibility />
-    <CTA />
     <Blog />
+    <CTA />
+    <Judge />
+    <WhatGPT3 />
     <Footer />
   </div>
 );

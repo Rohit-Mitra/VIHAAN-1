@@ -1,0 +1,60 @@
+.judges_section {
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 10px;
+
+    /* ff 3.6+ */
+    background:-moz-linear-gradient(90deg, rgba(255, 165, 0, 1) 0%, rgba(238, 130, 238, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-linear-gradient(90deg, rgba(255, 165, 0, 1) 0%, rgba(238, 130, 238, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-linear-gradient(90deg, rgba(255, 165, 0, 1) 0%, rgba(238, 130, 238, 1) 100%);
+
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee82ee', endColorstr='#FFA500', GradientType=0 );
+
+    /* ie 10+ */
+    background:-ms-linear-gradient(90deg, rgba(255, 165, 0, 1) 0%, rgba(238, 130, 238, 1) 100%);
+
+    /* global 94%+ browsers support */
+    background:linear-gradient(90deg, rgba(255, 165, 0, 1) 0%, rgba(238, 130, 238, 1) 100%);
+    padding: 3rem;
+}
+
+.k{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.k h1 {
+    font-size: 50px;
+    line-height: 75px;
+    font-family: var(--font-family);
+    font-weight: 800;
+}
+
+
+.judges_sectionB {
+    flex: 1;
+
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+.gradient__text2{
+    color: dimgray;
+    text-shadow: whitesmoke 3px 3px 10px;
+}
+
+@media screen and (max-width: 700px) {
+    .judges_sectionB {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+}
