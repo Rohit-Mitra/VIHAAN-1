@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- Designed by CodingLab | www.youtube.com/codinglabyt -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Responsive FAQ Accordion | CodingLab </title>-->
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="accordion">
+    <div class="image-box">
+      <img src="https://firebasestorage.googleapis.com/v0/b/vihaan2021-b1b86.appspot.com/o/images%2Flogos%2Ffaq.png?alt=media&token=3afc7645-3faa-48b6-8eed-1ad62630b81e" alt="faq Image">
+    </div>
+    <div class="accordion-text">
+      <div class="title">FAQ</div>
+    <ul class="faq-text">
+      <li>
+        <div class="question-arrow">
+          <span class="question">What is Vihaan?</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p>Vihaan is a national level hackathon to challenge your creative potential and build innovative solutions to existing problems.</p>
+        <span class="line"></span>
+      </li>
+      <li>
+        <div class="question-arrow">
+          <span class="question">Hackathon? What’s that?</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p>In general, it is a 2-3 days long competition which makes you come up with a technical solution to an existing problem under the topics provided. The purpose of a hackathon is for a group of programmers to work together on a collaboration project. In a hackathon, you have to code during the event although you can come up with ideas for how to proceed beforehand.</p>
+        <span class="line"></span>
+      </li>
+      <li>
+        <div class="question-arrow">
+          <span class="question">Wait so am I required to know coding? I don’t know if I’m skilled enough.</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p>Participation is the essential part, learning is the goal. You might need a basic idea of coding though on the development side.</p>
+        <span class="line"></span>
+      </li>
+      <li>
+        <div class="question-arrow">
+          <span class="question">Am I required to pay anything?</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p>No, it’s totally free. We only require your knowledge and enthusiasm. :)</p>
+        <span class="line"></span>
+      </li>
+      <li>
+        <div class="question-arrow">
+          <span class="question">I’m interested, How do I register?</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p>Registration links are active on the website. And the Google forms must have reached you already. There is no requirement of money to register.</p>
+        <span class="line"></span>
+      </li>
+      <li>
+        <div class="question-arrow">
+          <span class="question">What’s the prize if you end up winning? Give me some incentive.</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p>There is a butt load of a cash prize and swags up for grabs. Further details will be released soon. Although, last year the cash prize were around 1.5 lakhs and swags worth 5 lakhs of rupees.</p>
+        <span class="line"></span>
+      </li>
+      <li>
+        <div class="question-arrow">
+          <span class="question">Are there any prerequisites for participating? Am I required to have any form of tools?</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p>You’ll just need your trusty laptop and a sufficient bandwidth internet connection.</p>
+        <span class="line"></span>
+      </li>
+      <li>
+        <div class="question-arrow">
+          <span class="question">Is it a team competition, can’t I participate alone?</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p>Yes, Vihaan is a team based hackathon competition and you’ll need to form or be a part of a team to participate. Teaming up will help you socialize and increase your reach.</p>
+        <span class="line"></span>
+      </li>
+      <li>
+        <div class="question-arrow">
+          <span class="question">So what’s the participation criteria for me and my teammates?</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p>There is only one, you must be at least above 13 and are a college undergraduate or a high school student.</p>
+        <span class="line"></span>
+      </li>
+      <li>
+        <div class="question-arrow">
+          <span class="question">That’s great! Any other major thing I need to know?</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p>Nope, you’re all set. Rev your engines up!</p>
+        <span class="line"></span>
+      </li>
+    </ul>
+    </div>
+  </div>
+
+
+  <script>
+    let li = document.querySelectorAll(".faq-text li");
+    for (var i = 0; i < li.length; i++) {
+      li[i].addEventListener("click", (e)=>{
+        let clickedLi;
+        if(e.target.classList.contains("question-arrow")){
+          clickedLi = e.target.parentElement;
+        }else{
+          clickedLi = e.target.parentElement.parentElement;
+        }
+       clickedLi.classList.toggle("showAnswer");
+      });
+    }
+  </script>
+
+</body>
+</html>
+
